@@ -40,7 +40,7 @@
 #define LCD_ROWS 2
 
 Adafruit_CC3000 cc3000 = Adafruit_CC3000(ADAFRUIT_CC3000_CS,
-  ADAFRUIT_CC3000_IRQ, ADAFRUIT_CC3000_VBAT, 14);
+  ADAFRUIT_CC3000_IRQ, ADAFRUIT_CC3000_VBAT, SPI_CLOCK_DIV2);
 
 LiquidCrystal lcd(8, 9, 4, 5, 6, 7);
 
@@ -72,7 +72,7 @@ void loop() {
     previousTime = currentTime;
 
     lcd.setCursor(0, 0);
-    lcd.print(F("#subspacetx LCD"));
+    lcd.print(F("#subspacetx LCD "));
     lcd.setCursor(0, 1);
     lcd.print(F("  updating...   "));
     Serial.println(F("Updating..."));
