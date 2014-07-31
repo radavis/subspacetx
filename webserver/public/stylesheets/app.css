@@ -1,0 +1,15 @@
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+div.container {
+  margin: 0 10%;
+}
+
+table {
+  width: 100%;
+}
+
+table th {
+  text-align: left;
+}

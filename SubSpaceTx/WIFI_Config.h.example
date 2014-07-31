@@ -1,0 +1,10 @@
+#ifndef WIFI_CONFIG_H
+#define WIFI_CONFIG_H
+
+#define WLAN_SSID       "YourSSID"
+#define WLAN_PASS       "YourWiFiPassword"
+
+// Security options: WLAN_SEC_UNSEC, WLAN_SEC_WEP, WLAN_SEC_WPA or WLAN_SEC_WPA2
+#define WLAN_SECURITY   WLAN_SEC_WPA2
+
+#endif

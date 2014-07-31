@@ -1,0 +1,22 @@
+source 'https://rubygems.org'
+
+ruby '2.1.2'
+
+gem 'sinatra'
+gem 'sinatra-activerecord'
+gem 'unicorn'
+gem 'pg'
+gem 'rake'
+gem 'sidekiq'
+gem 'sidetiq'
+gem 'twitter'
+gem 'json'
+
+group :test, :development do
+  gem 'pry'
+  gem 'rspec'
+  gem 'capybara'
+  gem 'factory_girl'
+  gem 'shoulda-matchers'
+  gem 'valid_attribute'
+end

@@ -1,0 +1,19 @@
+<h1>#subspacetx</h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th>Username</th>
+    <th>Message</th>
+  </tr>
+
+  <% @tweets.each do |tweet| %>
+    <tr>
+      <td><img src="<%= tweet.profile_image %>" /></td>
+      <td>
+        <a href="http://www.twitter.com/<%= tweet.username %>">@<%= tweet.username %></a>
+      </td>
+      <td><%= tweet.message %></td>
+    </tr>
+  <% end %>
+</table>
